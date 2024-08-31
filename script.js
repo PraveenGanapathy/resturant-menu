@@ -1,7 +1,7 @@
 // Initialize Contentful client
 const client = contentful.createClient({
     space: 'i9frj73mtwoy', // Replace with your Contentful space ID
-    accessToken: '0W9QEh5CE25WQi1YSLgjT7y5_qURFf49CuwK2igJzzw' // Replace with your Contentful access token
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN // Use the environment variable
   });
   // Function to fetch menu items from Contentful
   async function fetchMenuItems() {
@@ -18,7 +18,7 @@ const client = contentful.createClient({
       console.log(menuItems);
       populateMenuItems(menuItems);
     } catch (error) {
-      console.error('Error fetching menu items:', error); // Log the error for debugging
+      //console.error('Error fetching menu items:', error); // Log the error for debugging
     }
   }
   
