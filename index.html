@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Menu</h1>
+    </header>
+    <main class="container">
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul class="tabs-nav" role="tablist">
+                <li role="presentation">
+                    <a id="tab-breakfast" class="btn btn-tabs active" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="true" data-order="1" tabindex="0">Breakfast</a>
+                </li>
+                <li role="presentation">
+                    <a id="tab-lunch" class="btn btn-tabs" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false" data-order="2" tabindex="-1">Lunch</a>
+                </li>
+                <li role="presentation">
+                    <a id="tab-dinner" class="btn btn-tabs" href="#dinner" role="tab" aria-controls="dinner" aria-selected="false" data-order="3" tabindex="-1">Dinner</a>
+                </li>
+            </ul>
+            <div id="menu-content">
+                <div id="breakfast" class="menu-section">
+                    <h3>Breakfast Items</h3>
+                    <ul class="list"></ul>
+                    <h3>Beverages</h3>
+                    <ul class="beverage-list"></ul>
+                </div>
+                <div id="lunch" class="menu-section">
+                    <h3>Lunch Items</h3>
+                    <ul class="list"></ul>
+                    <h3>Beverages</h3>
+                    <ul class="beverage-list"></ul>
+                </div>
+                <div id="dinner" class="menu-section">
+                    <h3>Dinner Items</h3>
+                    <ul class="list"></ul>
+                    <h3>Beverages</h3>
+                    <ul class="beverage-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Opening Hours: Monday - Saturday 12pm - 10:30pm, Sunday 12pm - 9pm</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</body>
+</html>
