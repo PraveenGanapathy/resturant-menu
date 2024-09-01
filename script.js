@@ -1,8 +1,10 @@
 // Initialize Contentful client
+import { NETLIFY_CONTENTFUL_ACCESS_TOKEN } from 'netlify-env';
+
 const client = contentful.createClient({
-    space: 'i9frj73mtwoy', // Replace with your Contentful space ID
-    accessToken: process.env.NETLIFY_CONTENTFUL_ACCESS_TOKEN // Use the environment variable
-  });
+  space: 'i9frj73mtwoy', // Replace with your Contentful space ID
+  accessToken: NETLIFY_CONTENTFUL_ACCESS_TOKEN // Use the imported variable
+});
   // Function to fetch menu items from Contentful
   async function fetchMenuItems() {
     try {
