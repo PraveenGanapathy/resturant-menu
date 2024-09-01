@@ -1,6 +1,5 @@
 // Initialize Contentful client
-import { NETLIFY_CONTENTFUL_ACCESS_TOKEN } from 'netlify-env';
-
+import { NETLIFY_CONTENTFUL_ACCESS_TOKEN } from 'https://unpkg.com/netlify-env@latest';
 const client = contentful.createClient({
   space: 'i9frj73mtwoy', // Replace with your Contentful space ID
   accessToken: NETLIFY_CONTENTFUL_ACCESS_TOKEN // Use the imported variable
