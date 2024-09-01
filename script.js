@@ -1,7 +1,7 @@
 // Initialize Contentful client
 const client = contentful.createClient({
     space: 'i9frj73mtwoy', // Replace with your Contentful space ID
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN // Use the environment variable
+    accessToken: process.env.NETLIFY_CONTENTFUL_ACCESS_TOKEN // Use the environment variable
   });
   // Function to fetch menu items from Contentful
   async function fetchMenuItems() {
